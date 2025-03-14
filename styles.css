@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+    text-align: center;
+}
+p {
+    color: #666;
+    font-size: 16px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+.form-data {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+.form-data p {
+    margin: 5px 0;
+}
