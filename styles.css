@@ -1,5 +1,24 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #34495e;
+}
+body {
+    font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
     background-color: #f4f4f4;
@@ -32,4 +51,158 @@ hr {
 }
 .form-data p {
     margin: 5px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Body styling with fluid width */
+body {
+    background: linear-gradient(to right, #eef2f3, #d9e4ea);
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+}
+
+/* Header - Fluid width */
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 15%;
+    min-width: 100px;
+    border-radius: 10px;
+}
+
+/* Navigation - Responsive */
+nav {
+    background: #34495e;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1%;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #1abc9c;
+    color: white;
+}
+
+/* Main content - Liquid width */
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* About Me - Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Gallery - Two dynamic columns */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px; margin-bottom: 10px;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 48%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Me - Multiple Rows */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Footer - Fluid width */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 4px solid #1abc9c;
+}
+
+/* Responsive Design */
+@media (max-width: 200px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
 }

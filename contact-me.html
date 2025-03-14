@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Page">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="my-interests.html">My Interests</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Get In Touch</h2>
+        <p>Fill out the form below to send me a message.</p>
+
+        <h2>Contact Me</h2>
+        <form method="post" action="response_page.php">
+            <fieldset>
+                <legend>Share or Request Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label>Are you contacting us for:</label>
+                <input type="radio" id="info" name="purpose" value="Information Request" required>
+                <label for="info">Information Request</label>
+                <input type="radio" id="share" name="purpose" value="Sharing Information">
+                <label for="share">Sharing Information</label>
+
+                <label for="topic">Topic of Interest:</label>
+                <select id="topic" name="topic">
+                    <option value="general">General Inquiry</option>
+                    <option value="event">Event Registration</option>
+                    <option value="volunteer">Volunteer Sign-up</option>
+                    <option value="newsletter">Newsletter Subscription</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" id="updates" name="updates"> I want to receive updates via email.
+                </label>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Annie Nouki My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
